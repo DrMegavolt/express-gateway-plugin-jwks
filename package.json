@@ -1,0 +1,28 @@
+{
+  "name": "express-gateway-plugin-jwks",
+  "version": "1.0.0",
+  "description": "Policy to support JWKS security providers like Auth0",
+  "main": "manifest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrMegavolt/express-gateway-plugin-jwks.git"
+  },
+  "keywords": [
+    "JWKS",
+    "JWT",
+    "Auth0"
+  ],
+  "author": "Serhii Kuts <sergeykuc@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/DrMegavolt/express-gateway-plugin-jwks/issues"
+  },
+  "homepage": "https://github.com/DrMegavolt/express-gateway-plugin-jwks#readme",
+  "dependencies": {
+    "express-jwt": "^5.3.1",
+    "jwks-rsa": "^1.3.0"
+  }
+}

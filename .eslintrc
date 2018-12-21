@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "standard",
+    "plugin:node/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": [
+    "import",
+    "promise",
+    "node"
+  ],
+  "rules": {
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "no-var": "error",
+    "semi": [
+      2,
+      "always"
+    ],
+    "no-console": "warn",
+    "prefer-const": "error",
+    "node/no-deprecated-api": [
+      "error",
+      {
+        "ignoreModuleItems": [
+          "crypto.createCipher",
+          "crypto.createDecipher"
+        ]
+      }
+    ]
+  },
+  "root": true
+}
