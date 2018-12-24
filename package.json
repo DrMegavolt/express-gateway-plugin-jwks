@@ -1,6 +1,6 @@
 {
   "name": "express-gateway-plugin-jwks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Policy to support JWKS security providers like Auth0",
   "main": "manifest.js",
   "scripts": {
