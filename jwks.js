@@ -1,6 +1,6 @@
 const jwksRsa = require('jwks-rsa');
 const jwt = require('express-jwt');
-
+const debug = require('debug')('express-gateway-plugin-jwks:jwks-policy');
 module.exports = pluginSettings => {
   return policyParams => {
     const settings = Object.assign({}, pluginSettings, policyParams);
@@ -8,9 +8,8 @@ module.exports = pluginSettings => {
     return (req,res,next) => {
       jwt(settings)(req,res,(err)=>{
         if (err){
-          console.log(err);
+          debug(err);
           res.statusCode = err.status || 401;
-          console.log('ending request')
           res.end();
           return;
         }
